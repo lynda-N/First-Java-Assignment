@@ -1,0 +1,86 @@
+Why do I need to start my class with keyword "public"
+Public is a Java keyword which declares a member's access as public, it can be use to access and modified a class outside it package by other members. Public members are visible to all other classes.
+
+The correct way of writing and naming a java class
+Java uses CamelCase as a practice for writing names of methods, variables, classes, packages and constants
+For classes and Interphase:Class name must be  noun with, first letter of each internal word must be capitalised for mixed case while for interphase name should be capitalised also just like class name
+
+Basic Data type in Java
+There are two data types in Java and they are.
+1. Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.
+2. Non-primitive data types: The non-primitive data types include Classes, Interfaces, and arrays
+Primitive Data Type
+Boolean Data Type
+It is used to store only two possible values: true and false. It can be used for simple flags that track true/false conditions. Boolean default value is false while the default size is 1byte
+Example: Boolean one = false
+
+Byte Data Type
+Its is used to save memory in large arrays where the memory savings is most required. It saves space because a byte is 4 times smaller than an integer. It can also be used in place of "int" data type.Its value-range lies between -128 to 127. Its default value is 0.
+Example: byte a = 10, byte b = -20
+
+Short Data Type
+This can also be used to save memory just like byte data type. A short data type is 2 times smaller than an integer.16-bit signed two's complement integer. Its value-range lies between -32,768 to 32,767. Its default value is 0.
+Example: short s = 10000, short r = -5000
+
+Int Data Type
+Is generally used as a default data type for integral values unless if there is no problem about memory. int data type is a 32-bit signed two's complement integer. Its value-range lies between - 2,147,483,648 (-2^31) to 2,147,483,647 (2^31 -1)
+Example: int a = 100000, int b = -200000
+
+Long Data Type
+The long data type is used when you need a range of values more than those provided by int.The long data type is a 64-bit two's complement integer. Its value-range lies between -9,223,372,036,854,775,808(-2^63) to 9,223,372,036,854,775,807(2^63 -1)
+Example: long a = 100000L, long b = -200000L
+
+Float Data Type
+The float data type is a single-precision 32-bit IEEE 754 floating point.Its value range is unlimited. It is recommended to use a float (instead of double) if you need to save memory in large arrays of floating point numbers. The float data type should never be used for precise values, such as currency. Its default value is 0.0F.
+Example: float f1 = 234.5f
+
+Double Data Type
+Its value range is unlimited. The double data type is generally used for decimal values just like float. The double data type also should never be used for precise values, such as currency.The double data type is a double-precision 64-bit IEEE 754 floating point,Its default value is 0.0d.
+Example: double d1 = 12.3
+
+Char Data Type
+The char data type is a single 16-bit Unicode character. Its value-range lies between '\u0000' (or 0) to '\uffff' (or 65,535 inclusive).The char data type is used to store characters.
+Example: char letterA = 'A'
+
+Non Primitive Data Type
+Non-primitive types are created by the programmer and is not defined by Java (except for String).
+Non-primitive types can be used to call methods to perform certain operations.
+Non-primitive types can be null.
+Non-primitive types starts with an uppercase letter.
+Non-primitive types have all the same size.
+
+Strings
+The String data type is used to store a sequence of characters (text). String values must be surrounded by double quotes:
+Example
+String greeting = "Hello World";
+System.out.println(greeting);
+
+Java Arrays
+Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+To declare an array, define the variable type with square brackets:
+String[] Human Hair;
+String[] Human Hair = {"Indian", "Malaysian", "Peruvian", "Brazilian"};
+
+Java Classes/Objects
+Java is an object-oriented programming language.
+Everything in Java is associated with classes and objects, along with its attributes and methods. For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake.
+A Class is like an object constructor, or a "blueprint" for creating objects.
+Create a Class
+To create a class, use the keyword class:
+Main.java
+Create a class named "Main" with a variable x:
+public class Main {
+  int x = 5;
+}
+
+Interfaces
+Another way to achieve abstraction in Java, is with interfaces.
+An interface is a completely "abstract class" that is used to group related methods with empty bodies:
+Example
+// interface
+interface Animal {
+  public void animalSound(); // interface method (does not have a body)
+  public void run(); // interface method (does not have a body)
+}
+
+Because public static void main(string[]args) is a signature of a function.
